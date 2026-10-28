@@ -79,7 +79,7 @@ export default function Projects() {
               {/* IMAGE */}
               <div className="col-start-4">
                 <img
-                  src="src\assets\ecopoints-qr-code.svg"
+                  src="/ecopoints-qr-code.svg"
                   className="justify-self-center rounded-2xl w-[12rem] h-[12rem]"
                 />
               </div>
