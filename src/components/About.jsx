@@ -56,13 +56,13 @@ export default function About() {
               </h1>
               {/* Bento Grid Root */}
               <div className="grid grid-cols-3 gap-4 m-4">
-                <div className="col-span-2 rounded-lg p-2 transition-all duration-300 ease-in hover:bg-indigo-400/20">
+                <div className="border border-white/20 col-span-2 rounded-lg p-2 transition-all duration-300 ease-in hover:border-white hover:bg-indigo-400/20">
                   <p className="font-normal justify-self-center text-xs md:text-lg text-indigo-100">
                     Watch and Analyze Movies
                   </p>
                 </div>
                 {listHobbies.map((listHobbies, index) => (
-                  <div className="rounded-lg p-2 transition-all duration-300 ease-in hover:bg-indigo-400/20">
+                  <div className="border border-white/20 rounded-lg p-2 transition-all duration-300 ease-in hover:border-white hover:bg-indigo-400/20">
                     <p
                       key={index}
                       className="font-normal justify-self-center text-xs md:text-lg text-indigo-100"
@@ -71,7 +71,7 @@ export default function About() {
                     </p>
                   </div>
                 ))}
-                <div className="col-span-2 rounded-lg p-2 transition-all duration-300 ease-in hover:bg-indigo-400/20">
+                <div className="border border-white/20 col-span-2 rounded-lg p-2 transition-all duration-300 ease-in hover:border-white hover:bg-indigo-400/20">
                   <p className="font-normal justify-self-center text-xs md:text-lg text-indigo-100">
                     Explore Places
                   </p>
