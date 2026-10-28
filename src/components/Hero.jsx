@@ -30,13 +30,13 @@ export default function Hero() {
           <div className="flex items-center space-x-4 justify-center cursor-pointer">
             <a
               href="#about"
-              className="justify-self-center rounded-lg bg-indigo-500 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
+              className="justify-self-center rounded-lg bg-indigo-500/20 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
             >
               View Projects
             </a>
             <a
               href="#about"
-              className="justify-self-center rounded-lg bg-indigo-500 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
+              className="justify-self-center rounded-lg bg-indigo-500/20 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
             >
               Get in Touch
             </a>
