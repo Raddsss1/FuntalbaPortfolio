@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
+import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,9 +14,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Projects />
+      <Certificates />
+      <Experience />
       <Education />
       <Skills />
-      <Projects />
       <Footer />
     </div>
   );
