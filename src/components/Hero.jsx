@@ -30,13 +30,13 @@ export default function Hero() {
           <div className="flex items-center space-x-4 justify-center cursor-pointer">
             <a
               href="#about"
-              className="justify-self-center rounded-lg bg-indigo-500 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
+              className="justify-self-center rounded-lg bg-indigo-500/20 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
             >
               View Projects
             </a>
             <a
               href="#about"
-              className="justify-self-center rounded-lg bg-indigo-500 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
+              className="justify-self-center rounded-lg bg-indigo-500/20 text-sm font-bold p-4 w-[8rem] h-full transition-all duration-300 hover:bg-indigo-600 hover:-translate-y-2"
             >
               Get in Touch
             </a>
@@ -47,7 +47,7 @@ export default function Hero() {
           <div className="border border-solid border-indigo-500 border-x-8 flex items-center overflow-hidden justify-center px-2 py-2 rounded-[8rem] w-[20rem] h-[25rem] md:w-[30rem] md:h-[35rem]">
             <img
               className="w-[20rem] h-[25rem] md:w-full md:h-[40rem]"
-              src="src\assets\graduate-photo-web.JPG"
+              src="/graduate-photo-web.JPG"
             />
           </div>
         </div>

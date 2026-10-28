@@ -32,7 +32,10 @@ export default function Projects() {
   ];
 
   return (
-    <section className="relative min-h-screen mb-6 flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section
+      id="projects"
+      className="relative min-h-screen mb-6 flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
       {/* ROOT DIV */}
       <div className="grid grid-cols-4 gap-4 w-[80rem] items-center justify-center">
         {/* PROJECT #1 (EcoPoints) */}
@@ -76,7 +79,7 @@ export default function Projects() {
               {/* IMAGE */}
               <div className="col-start-4">
                 <img
-                  src="src\assets\ecopoints-qr-code.svg"
+                  src="/ecopoints-qr-code.svg"
                   className="justify-self-center rounded-2xl w-[12rem] h-[12rem]"
                 />
               </div>
