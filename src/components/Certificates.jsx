@@ -76,10 +76,10 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="min-h-screen flex items-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       {/* ROOT DIV */}
-      <div className="flex flex-col items-center justify-center bg-slate-900/60 p-12 rounded-xl h-full w-full">
+      <div className="flex flex-col items-center bg-slate-900/60 p-12 rounded-xl h-full max-w-7xl">
         <h2 className="flex justify-center w-full max-w-[80rem] mb-10 text-3xl md:text-6xl font-bold tracking-tight text-slate-50 sm:text-4xl">
           Certifications
         </h2>

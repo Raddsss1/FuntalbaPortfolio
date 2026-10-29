@@ -28,49 +28,49 @@ export default function Navbar() {
             <a
               href="#about"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               About
             </a>
             <a
               href="#projects"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               Projects
             </a>
             <a
-              href="#certificates"
-              onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
-            >
-              Certificates
-            </a>
-            <a
               href="#experience"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               Experience
             </a>
             <a
+              href="#certificates"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
+            >
+              Certificates
+            </a>
+            <a
               href="#education"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               Education
             </a>
             <a
               href="#achievements"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               Achievements
             </a>
             <a
               href="#skills"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+              className="block text-gray-300 text-sm lg:text-base transition-all ease-out duration-300 hover:text-indigo-400 hover:-translate-y-2"
             >
               Skills
             </a>
