@@ -16,8 +16,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <Certificates />
       <Experience />
+      <Certificates />
       <Education />
       <Achievements />
       <Skills />
