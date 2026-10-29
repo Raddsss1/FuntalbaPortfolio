@@ -27,31 +27,50 @@ export default function Navbar() {
           <div className="hidden md:flex p-2 flex space-x-6 lg:space-x-8 font-light text-md">
             <a
               href="#about"
-              className="py-2 transition-all duration-300 cursor-pointer hover:font-normal hover:text-indigo-300 hover:-translate-y-2"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               About
             </a>
             <a
               href="#projects"
-              className="py-2 transition-all duration-300 cursor-pointer hover:font-normal hover:text-indigo-300 hover:-translate-y-2"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               Projects
             </a>
             <a
+              href="#certificates"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+            >
+              Certificates
+            </a>
+            <a
+              href="#experience"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+            >
+              Experience
+            </a>
+            <a
               href="#education"
-              className="py-2 transition-all duration-300 cursor-pointer hover:font-normal hover:text-indigo-300 hover:-translate-y-2"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               Education
             </a>
             <a
               href="#achievements"
-              className="py-2 transition-all duration-300 cursor-pointer hover:font-normal hover:text-indigo-300 hover:-translate-y-2"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               Achievements
             </a>
             <a
               href="#skills"
-              className="py-2 transition-all duration-300 cursor-pointer hover:font-normal hover:text-indigo-300 hover:-translate-y-2"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               Skills
             </a>
@@ -88,11 +107,18 @@ export default function Navbar() {
               Projects
             </a>
             <a
-              href="#achievements"
+              href="#certificates"
               onClick={() => setMobileMenuIsOpen(false)}
               className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
-              Achievements
+              Certificates
+            </a>
+            <a
+              href="#experience"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+            >
+              Experience
             </a>
             <a
               href="#education"
@@ -100,6 +126,13 @@ export default function Navbar() {
               className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
             >
               Education
+            </a>
+            <a
+              href="#achievements"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300"
+            >
+              Achievements
             </a>
             <a
               href="#skills"

@@ -1,4 +1,4 @@
-import { Dot, DotIcon } from "lucide-react";
+import { DotIcon } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
         {/* RIGHT COLUMN */}
         <div className="flex items-center justify-center">
-          <div className="border border-solid border-indigo-500 border-x-8 flex items-center overflow-hidden justify-center px-2 py-2 rounded-[8rem] w-[20rem] h-[25rem] md:w-[30rem] md:h-[35rem]">
+          <div className="border border-solid border-slate-800 border-x-8 flex items-center overflow-hidden justify-center px-2 py-2 rounded-[8rem] w-[20rem] h-[25rem] md:w-[30rem] md:h-[35rem]">
             <img
               className="w-[20rem] h-[25rem] md:w-full md:h-[40rem]"
               src="/graduate-photo-web.JPG"
