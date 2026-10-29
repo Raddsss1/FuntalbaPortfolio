@@ -38,3 +38,37 @@
     transform: translateY(0);
   }
 }
+
+html {
+  background-color: #020617; /* slate-950, also fills behind the bar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #334155 #020617; /* thumb slate-700, track slate-950 */
+}
+
+/* Chrome, Edge, Safari: custom bar with a hover effect */
+@supports selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #020617;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #334155; /* slate-700 */
+    border: 2px solid #020617; /* gap around the thumb */
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6366f1; /* indigo-500 */
+  }
+}

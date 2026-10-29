@@ -14,18 +14,23 @@ const EDUCATION = [
     degree: "Bachelor of Science in Information Technology",
     period: "Sept. 2026 - Present",
     description:
-      "Focused on web development, data structures, and software engineering.",
+      "Continued my journey learning what the tech industry could offer here in PUP",
   },
   {
     school: "Polytechnic University of the Philippines",
     degree: "Diploma in Information Technology",
     period: "Sept. 2023 - Sept. 2026",
-    description: "Graduated with honors. Built my first websites here.",
+    description: "Graduated with honors. Built my first projects here.",
   },
   {
     school: "Jose Rizal University",
     degree: "STEM",
-    period: "June 2021 - June 2023",
+    period: "June 2023",
+  },
+  {
+    school: "University of Santo Tomas",
+    degree: "Junior High School",
+    period: "August 2021",
   },
 ];
 
@@ -67,7 +72,7 @@ function TimelineItem({ item }) {
       </p>
 
       {/* Card */}
-      <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-5 transition-colors duration-300 hover:border-indigo-500/40 md:ml-10">
+      <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-6 transition-colors duration-300 hover:border-indigo-500/40 md:ml-10">
         <h3 className="text-lg font-semibold text-slate-100">{item.school}</h3>
         <p className="mt-1 text-indigo-300">{item.degree}</p>
         {item.description && (
