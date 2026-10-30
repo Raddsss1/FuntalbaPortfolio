@@ -64,7 +64,7 @@ function TimelineItem({ item }) {
 
       {/* Period */}
       <p
-        className={`pt-0.5 text-sm font-medium transition-colors duration-500 md:pr-10 md:text-right ${
+        className={`pt-0.5 text-sm font-medium transition-colors duration-500 md:pr-8 md:text-right ${
           reached ? "text-indigo-300" : "text-slate-500"
         }`}
       >
@@ -105,13 +105,16 @@ export default function Education() {
 
   return (
     <section id="education" className="bg-slate-950 px-6 py-24 text-slate-200">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
-          Education
-        </h2>
-        <p className="mt-3 max-w-xl text-slate-400">
-          Where I studied, from my most recent school back to where it started.
-        </p>
+      <div className="mx-auto max-w-4xl">
+        <div className="flex flex-col items-center justify-center p-6 bg-slate-900/60 rounded-xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-6xl">
+            Education
+          </h2>
+          <p className="mt-2 max-w-3xl text-slate-400">
+            Where I studied, from my most recent school back to where it
+            started.
+          </p>
+        </div>
 
         <div ref={listRef} className="relative mt-16">
           {/* Track (grey) */}
