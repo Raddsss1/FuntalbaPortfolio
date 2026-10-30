@@ -47,7 +47,7 @@ export default function Hero() {
           <div className="border border-solid border-slate-800 bg-slate-900/60 border-x-8 flex items-center overflow-hidden justify-center px-2 py-2 rounded-[8rem] w-[20rem] h-[25rem] md:w-[30rem] md:h-[35rem]">
             <img
               className="w-[20rem] h-[25rem] md:w-full md:h-[40rem]"
-              src="/graduate-photo-web.JPG"
+              src="/graduate-photo.webp"
             />
           </div>
         </div>

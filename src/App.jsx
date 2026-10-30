@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Achievements />
       <Education />
       <Skills />
+      <CallToAction />
       <Footer />
     </div>
   );

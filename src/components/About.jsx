@@ -4,36 +4,40 @@ import { useState, useEffect } from "react";
 // (put your files in the /public/about folder). Add or remove items freely.
 const PHOTOS = [
   {
-    src: "/AboutP1.jpg",
+    src: "/AboutP1.webp",
     alt: "AboutPicture1",
   },
   {
-    src: "/AboutP2.jpg",
+    src: "/AboutP2.webp",
     alt: "AboutPicture2",
   },
   {
-    src: "AboutP3.jpg",
+    src: "AboutP3.webp",
     alt: "AboutPicture3",
   },
   {
-    src: "/AboutP4.jpg",
+    src: "/AboutP4.webp",
     alt: "AboutPicture4",
   },
   {
-    src: "/AboutP5.jpg",
+    src: "/AboutP5.webp",
     alt: "AboutPicture5",
   },
   {
-    src: "/AboutP6.jpg",
+    src: "/AboutP6.webp",
     alt: "AboutPicture6",
   },
   {
-    src: "/AboutP7.jpg",
+    src: "/AboutP7.webp",
     alt: "AboutPicture7",
   },
   {
-    src: "/AboutP8.jpg",
+    src: "/AboutP8.webp",
     alt: "AboutPicture8",
+  },
+  {
+    src: "/AboutP9.webp",
+    alt: "AboutPicture9",
   },
 ];
 
