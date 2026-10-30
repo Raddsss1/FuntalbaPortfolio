@@ -46,15 +46,10 @@ const Experience = [
    2. ONE TIMELINE ENTRY
    The dot lights up once the scroll line reaches it.
    ------------------------------------------------------------------------- */
-function TimelineItem({ item, scrollRef }) {
+function TimelineItem({ item }) {
   const ref = useRef(null);
-  // Fires when the entry crosses ~60% down the scroller (matches the line).
-  // root: scrollRef = measure against the scrolling box, not the whole page.
-  const reached = useInView(ref, {
-    once: true,
-    root: scrollRef,
-    margin: "0px 0px -40% 0px",
-  });
+  // Fires when the entry crosses ~60% down the viewport (matches the line).
+  const reached = useInView(ref, { once: true, margin: "0px 0px -40% 0px" });
 
   return (
     <li
@@ -69,7 +64,7 @@ function TimelineItem({ item, scrollRef }) {
         <span
           className={`h-4 w-4 rounded-full border-2 transition-colors duration-500 ${
             reached
-              ? "border-indigo-400 bg-indigo-500 shadow-[0_0_0_6px_rgba(99,102,241,0.18)] "
+              ? "border-indigo-400 bg-indigo-500 shadow-[0_0_0_6px_rgba(99,102,241,0.18)]"
               : "border-slate-600 bg-slate-950"
           }`}
         />
@@ -102,13 +97,11 @@ function TimelineItem({ item, scrollRef }) {
 
 // EXPERIENCE SECTION
 export default function EXPERIENCE() {
-  const scrollRef = useRef(null);
   const listRef = useRef(null);
   const reduceMotion = useReducedMotion();
 
-  // Progress of the list through the scroller, 0 -> 1
+  // Progress of the list through the viewport, 0 -> 1
   const { scrollYProgress } = useScroll({
-    container: scrollRef,
     target: listRef,
     offset: ["start 60%", "end 60%"],
   });
@@ -134,37 +127,30 @@ export default function EXPERIENCE() {
           </p>
         </div>
 
-        {/* Vertical scroller: shows about 3 experiences, scroll for the rest */}
-        <div
-          ref={scrollRef}
-          className="mt-16 max-h-[48rem] overflow-y-auto pl-2 pr-4"
-        >
-          <div ref={listRef} className="relative">
-            {/* Track (grey) */}
-            <div
-              aria-hidden="true"
-              className="absolute bottom-0 left-2 top-0 w-0.5 bg-slate-800 md:left-48"
-            />
-            {/* Fill (indigo) - grows as you scroll */}
-            <motion.div
-              aria-hidden="true"
-              style={{
-                scaleY: reduceMotion ? 1 : smooth,
-                transformOrigin: "top",
-              }}
-              className="absolute bottom-0 left-2 top-0 w-0.5 bg-gradient-to-b from-indigo-400 to-indigo-600 md:left-48"
-            />
+        <div ref={listRef} className="relative mt-16">
+          {/* Track (grey) */}
+          <div
+            aria-hidden="true"
+            className="absolute bottom-0 left-2 top-0 w-0.5 bg-slate-800 md:left-48"
+          />
+          {/* Fill (indigo) - grows as you scroll */}
+          <motion.div
+            aria-hidden="true"
+            style={{
+              scaleY: reduceMotion ? 1 : smooth,
+              transformOrigin: "top",
+            }}
+            className="absolute bottom-0 left-2 top-0 w-0.5 bg-gradient-to-b from-indigo-400 to-indigo-600 md:left-48"
+          />
 
-            <ol className="space-y-12">
-              {Experience.map((item) => (
-                <TimelineItem
-                  key={`${item.organization}-${item.period}`}
-                  item={item}
-                  scrollRef={scrollRef}
-                />
-              ))}
-            </ol>
-          </div>
+          <ol className="space-y-12">
+            {Experience.map((item) => (
+              <TimelineItem
+                key={`${item.organization}-${item.period}`}
+                item={item}
+              />
+            ))}
+          </ol>
         </div>
       </div>
     </section>
